@@ -1,0 +1,20 @@
+name: ${project.name}
+main: ru.sliva.plugin.Main
+version: ${project.version}
+authors: [ sliva_ru ]
+depend: [ LuckPerms ]
+api-version: 1.19
+description: Example description
+libraries:
+  - org.postgresql:postgresql:42.5.1
+commands:
+  example:
+    aliases: [exam]
+    description: 'Example description'
+    usage: '/example'
+    permission: 'example.permission'
+    permission-message: 'You do not have permission to execute this'
+permissions:
+  example.permission:
+    description: '...'
+    default: 'op'
